@@ -20,19 +20,20 @@ def run():
 
     st.sidebar.info('This app was created to predict patient medical charges')
     #st.sidebar.info("<h1 style='text-align: center; color: grey;'>Insurance Charges Predictor</h1>", unsafe_allow_html=True)
-    st.sidebar.success('Check more in: https://www.pycaret.org')
-    
+        
     add_selectbox = st.sidebar.selectbox(
     "How would you like to predict?",
     ("Online", "Batch"))
     st.sidebar.image(image_hospital)
+
+    st.sidebar.success('Check [here]() for more info')
 
     st.markdown("<h1 style='text-align: center; color: grey;'>Insurance Charges Predictor</h1>", unsafe_allow_html=True)
 
 
     if add_selectbox == 'Online':
 
-        age = st.number_input('Enter the age of the primary beneficiary', min_value=1, max_value=100, value=25)
+        age = st.number_input('Enter the age of the primary beneficiary', min_value=1, max_value=100, value=20)
         sex = st.selectbox('Enter the gender of the primary beneficiary', ['male', 'female'])
         bmi = st.number_input('Enter the BMI (body mass index) of the primary beneficiary', min_value=10, max_value=60, value=10)
         children = st.selectbox('Enter the number of dependents covered by insurance', [0,1,2,3,4,5,6,7,8,9,10])
@@ -47,7 +48,7 @@ def run():
         input_dict = {'age' : age, 'sex' : sex, 'bmi' : bmi, 'children' : children, 'smoker' : smoker, 'region' : region}
         input_df = pd.DataFrame([input_dict])
 
-        if st.button("Predict"):
+        if st.button("Get your Prediction"):
             output = predict(model=model, input_df=input_df)
             output = '$' + str(output)
 
