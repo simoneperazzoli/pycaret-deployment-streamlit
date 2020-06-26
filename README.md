@@ -2,7 +2,9 @@
 
 
 This is an app based on Pycaret cases with the goal to predict patient medical charges in the US through xgboos model.
-The app was built with Streamlit interface and deployed on Heroku.
+
+**Insurance Charges Predictor** was built with Streamlit interface and deployed on Heroku.
+
 Check [here](https://healthexpensespredictor.herokuapp.com/) the App!
 
 References:
