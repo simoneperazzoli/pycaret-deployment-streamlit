@@ -1,12 +1,9 @@
-# Build and deploy machine learning web app using PyCaret and Streamlit
-#### A beginner's guide to deploy machine learning app on Heroku PaaS
+### Insurance Charges Predictor
 
-Read the complete post: https://medium.com/@moez_62905/build-and-deploy-machine-learning-web-app-using-pycaret-and-streamlit-28883a569104
 
-- Official Website : https://www.pycaret.org
+This is an app based on Pycaret cases with the goal to predict patient medical charges in the US through xgboos model.
 
-- Follow us on LinkedIn : https://www.linkedin.com/company/pycaret/
+References:
+- Deploy guideline: https://medium.com/@moez_62905/build-and-deploy-machine-learning-web-app-using-pycaret-and-streamlit-28883a569104
 
-- Subscribe to our YouTube : https://www.youtube.com/channel/UCxA1YTYJ9BEeo50lxyI_B3g 
-
-- PyCaret repository : https://www.github.com/pycaret/pycaret
+- Pycaret Official Website : https://www.pycaret.org
