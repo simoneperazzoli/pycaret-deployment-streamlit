@@ -48,7 +48,7 @@ def run():
         input_dict = {'age' : age, 'sex' : sex, 'bmi' : bmi, 'children' : children, 'smoker' : smoker, 'region' : region}
         input_df = pd.DataFrame([input_dict])
 
-        if st.button("Get your Prediction"):
+        if st.button("Compute your expenses"):
             output = predict(model=model, input_df=input_df)
             output = '$' + str(output)
 
